@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website is a website that is designed for certain viewports but will not look good at different resolutions.  A responsive website is designed to look good from mobile to Desktop.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is used when the client wants to design the mobile layout first and then add elements as we move up from mobile to desktop.  Desktop first is when the desktop is designed first and then we use media queries going down to mobile to layout the website to look good on all devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Since most modern browsers set the font size to 16 pixels, resetting the CSS and instructing the HTML to have a font-size of 62.5% let's work with a font size of 10px which would be equal to 1 rem.  So if we need to have a font size of 24 pixels, it can be represented by 2.4rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing for CSS is what a program is to a computer.  You are giving a set of instructions to the preprocessor and it is compiling it into vanilla CSS.  It makes your code look more readable and easier to follow.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite part of preprocessing is the layout and the structure to it.  If you need to change a color in a website, you can just change one variable and the changes will automatically go across your whole site.  Since I come from a programming background, the only thing that presents a challenge for me is coming up with my own designs.  I can code the blueprint, but not come up with the blueprint myself.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

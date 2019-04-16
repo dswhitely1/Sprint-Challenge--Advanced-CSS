@@ -1,14 +1,15 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpaceWalkers</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -16,50 +17,105 @@
 
 <body>
 
- <!-- navigation code here -->
+  <!-- navigation code here -->
+  <section class="navbar">
+    <h1 class="animated lightSpeedIn">SpaceWalkers</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Sign In</a>
+    </nav>
+  </section>
+
 
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
+      <img src="img/main-header.png" alt="clouds"> <!-- image code here -->
 
-      <h2>Lift Off</h2>
-    
-      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+      <h2 class="animated lightSpeedIn">Lift Off</h2>
+
+      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a
+        marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate,
+        that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
     </header>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+      <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+      <img src="img/sky.png" class="sky" alt="Space sky image">
+      <img src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
-   
+
     <section class="visit-planets">
-     
-      <h3>Can We Visit Planets?</h3>
-    
-      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
-      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
+
+      <h3 class="animated lightSpeedIn">Can We Visit Planets?</h3>
+
+      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe,
+        having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
+
+      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as
+        equals. The airman's earth, if free men make it.</p>
     </section>
-    
+
     <section class="walk">
       <div class="walk-text">
-        <h3>Let's Go For A Walk</h3>
+        <h3 class="animated lightSpeedIn">Let's Go For A Walk</h3>
 
-        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
-      
-        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
+        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic.
+          The Earth was absolutely round.</p>
+
+        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye,
+          and my thumb blotted out the planet Earth.</p>
+
         <div class="btn">
           Sign Up
         </div>
       </div>
-      
+
       <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+        <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
+    </section>
+    <section class="content-form">
+      <h3 class="animated lightSpeedIn">Subscribe to our Magazine</h3>
+      <form action="">
+        <div class="row">
+          <div class="left-side"><label for="">First Name</label></div>
+          <div class="right-side"><input placeholder="John" type="text"></div>
+        </div>
+        <div class="row">
+          <div class="left-side"><label for="">Last Name</label></div>
+          <div class="right-side"><input placeholder="Smith" type="text"></div>
+        </div>
+        <div class="row">
+          <div class="left-side">
+            <label for="">Issues</label>
+          </div>
+          <div class="right-side">
+            <select name="package" id="package">
+              <option value="One Year">1 year $30.00</option>
+              <option value="Two Years">2 years $49.99</option>
+              <option value="Five Years">5 Years $99.99</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-side"><label for="">Phone Number</label></div>
+          <div class="right-side"><input type="tel" placeholder="(555) 555-1212"></div>
+        </div>
+        <div class="row">
+          <div class="left-side"><label for="">Email</label></div>
+          <div class="right-side"><input type="email" placeholder="john.smith@me.com"></div>
+        </div>
+        <div class="row">
+          <div class="left-side"><label for="">Special Instructions</label></div>
+          <div class="right-side"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+        </div>
+        <div class="row"><input type="submit" value="Sign Me Up!"></div>
+      </form>
     </section>
 
     <footer>
@@ -67,5 +123,7 @@
     </footer>
 
   </div>
+  <script src="js/scroll.js"></script>
 </body>
+
 </html>

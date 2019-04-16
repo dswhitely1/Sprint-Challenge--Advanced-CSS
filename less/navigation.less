@@ -1,1 +1,44 @@
 // Navigation code here
+
+.navbar {
+	.flex(center, stretch, column, nowrap);
+	padding-top: 13px;
+	border: 1px solid @sea-shell;
+	background-color: @wild-sand;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+
+	h1 {
+		font-size: 4rem;
+		text-align: center;
+		margin-bottom: 18px;
+		color: @ebony-clay;
+	}
+
+	nav {
+		.flex(center);
+
+		margin: 0 auto;
+		margin-bottom: 11px;
+		color: @nav-font;
+		width: 85%;
+
+		@media @phone {
+			.flex-params(space-around);
+			margin-bottom: 15px;
+		}
+		a {
+			font-size: 1.6rem;
+			margin: 0 1.75%;
+
+			@media @phone {
+				margin: 0;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
